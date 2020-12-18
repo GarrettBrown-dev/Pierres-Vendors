@@ -50,6 +50,15 @@ namespace PierresVendors.Tests
 
         Assert.AreEqual(updatedName, result);
         }
+        [TestMethod]
+        public void GetAll_ReturnsEmptyList_ItemList()
+        {
+        List<Order> newList = new List<Order> { };
+
+        List<Order> result = Order.GetAll();
+
+        CollectionAssert.AreEqual(List, result);
+        }
 
     }
 
