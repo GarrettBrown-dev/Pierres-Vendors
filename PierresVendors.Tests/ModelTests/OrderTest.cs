@@ -66,7 +66,7 @@ namespace PierresVendors.Tests
         string name2 = "Flavor-FLAVE";
         Order newOrder1 = new Order(name1, "03/15/2019", "Rappers Are Cool Event", "$50,000");
         Order newOrder2 = new Order(name2, "02/14/2020", "Flavor of Love Reunion", "$100,000");
-        List<Order> newList = new List<Order> { newOrder, newOrder2 };
+        List<Order> newList = new List<Order> { newOrder1, newOrder2 };
 
         List<Order> result = Order.GetAll();
 
