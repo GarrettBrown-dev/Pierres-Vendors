@@ -49,7 +49,7 @@ namespace PierresVendors.Tests
 
       List<Vendor> result = Vendor.GetAll();
 
-      CollectionAssert.AreEqual(oldList, result);
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 
