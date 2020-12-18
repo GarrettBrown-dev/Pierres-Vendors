@@ -1,0 +1,25 @@
+@{
+    Layout = "_Layout";
+}
+
+@using PierresVendors.Models;
+@if (@Model["orders"].Count == 0)
+{
+    <h3>There are no orders for @Model["vendor"].Name, please add one mon friar!</h3>
+}
+else
+{
+    <h3>Here are all of the orders for @Model["vendor"].Name!:</h3>
+
+    <ol>
+        @foreach (Order order in @Model["orders"])
+        {
+            <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Name</a></li>
+        }
+    </ol>
+}
+
+
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order!</a></p>
+<p><a href='/vendors'>Return to vendor list!</a></p>
+<p><a href='/'>Return to Main Page!</a></p>
