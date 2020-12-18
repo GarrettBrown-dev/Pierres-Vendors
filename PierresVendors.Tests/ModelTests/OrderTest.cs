@@ -38,6 +38,18 @@ namespace PierresVendors.Tests
         Assert.AreEqual(desc, result3);
         Assert.AreEqual(cost, result4);
         }
+        [TestMethod]
+        public void SetName_SetName_String()
+        {
+        string name = "P-Diddy";
+        Order newOrder = new Order(name, "03/15/2019", "Rappers Are Cool Event", "$50,000");
+
+        string updatedName = "Flavor-FLAVE";
+        newOrder.Name = updatedName;
+        string result = newOrder.Name;
+
+        Assert.AreEqual(updatedblame, result);
+        }
 
     }
 
