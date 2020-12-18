@@ -26,8 +26,7 @@ namespace PierresVendors.Tests
 
       string result = newVendor.Name;
 
-      Assert.AreEqual(
-          Name, result);
+      Assert.AreEqual(name, result);
     }
   }
 
