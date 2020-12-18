@@ -80,7 +80,7 @@ namespace PierresVendors.Tests
 
         int result = newOrder.Id;
 
-        Assert.AreEqual(1, Result);
+        Assert.AreEqual(1, result);
         }
 
     }
