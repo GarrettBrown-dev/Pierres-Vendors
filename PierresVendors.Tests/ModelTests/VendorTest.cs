@@ -64,7 +64,7 @@ namespace PierresVendors.Tests
       Vendor result = Vendor.Find(2);
 
 
-      Assert.AreEqual(oldVendor2, result);
+      Assert.AreEqual(newVendor2, result);
     }
   }
 
