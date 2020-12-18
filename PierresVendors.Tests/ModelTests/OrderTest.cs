@@ -57,7 +57,7 @@ namespace PierresVendors.Tests
 
         List<Order> result = Order.GetAll();
 
-        CollectionAssert.AreEqual(List, result);
+        CollectionAssert.AreEqual(newList, result);
         }
 
     }
