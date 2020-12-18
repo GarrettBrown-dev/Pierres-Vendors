@@ -25,7 +25,7 @@ namespace PierresVendors.Controllers
     }
 
     [HttpPost("/orders/delete")]
-    public ActionResult DeleteAll()
+    public ActionResult Delete()
     {
       Order.ClearAll();
       return View();
