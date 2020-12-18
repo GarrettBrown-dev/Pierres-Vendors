@@ -48,7 +48,7 @@ namespace PierresVendors.Tests
         newOrder.Name = updatedName;
         string result = newOrder.Name;
 
-        Assert.AreEqual(updatedblame, result);
+        Assert.AreEqual(updatedName, result);
         }
 
     }
