@@ -72,6 +72,16 @@ namespace PierresVendors.Tests
 
         CollectionAssert.AreEqual(newList, result);
         }
+        [TestMethod]
+        public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+        {
+        string name = "P-Diddy";
+        Order newOrder = new Order(name, "03/15/2019", "Rappers Are Cool Event", "$50,000");
+
+        int result = newOrder.Id;
+
+        Assert.AreEqual(1, Result);
+        }
 
     }
 
