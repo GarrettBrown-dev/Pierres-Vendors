@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Vendor.Models;
+using PierresVendors.Models;
 using System.Collections.Generic;
 
-namespace Vendor.Controllers
+namespace PierresVendors.Controllers
 {
   public class VendorsController : Controller
   {

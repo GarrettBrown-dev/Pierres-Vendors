@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Vendor.Models
+namespace PierresVendors.Models
 {
 
   public class Order
