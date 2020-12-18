@@ -18,18 +18,22 @@ namespace PierresVendors.Models
       Id = _instances.Count;
       Orders = new List<Order> { };
     }
+
     public static void ClearAll()
     {
       _instances.Clear();
     }
+
     public static List<Vendor> GetAll()
     {
       return _instances;
     }
+
     public static Vendor Find(int searchId)
     {
       return _instances[searchId - 1];
     }
+    
     public void AddOrder(Order order)
     {
       Orders.Add(order);
