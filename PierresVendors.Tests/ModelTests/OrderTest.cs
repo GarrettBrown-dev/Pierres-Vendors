@@ -36,7 +36,7 @@ namespace PierresVendors.Tests
         Assert.AreEqual(name, result1);
         Assert.AreEqual(date, result2);
         Assert.AreEqual(desc, result3);
-        Assert.AreEqual(cost, result5);
+        Assert.AreEqual(cost, result4);
         }
 
     }
