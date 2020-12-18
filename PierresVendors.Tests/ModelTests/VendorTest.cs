@@ -16,7 +16,7 @@ namespace PierresVendors.Tests
     public void VendorConstructor_ReturnsInstance_Vendor()
     {
       Vendor newVendor = new Vendor("test");
-      Assert.AreEqual(typeof(Vendor), newerVendor.GetType());
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
 
