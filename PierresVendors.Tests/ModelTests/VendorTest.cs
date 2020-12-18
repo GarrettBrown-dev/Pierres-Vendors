@@ -51,6 +51,21 @@ namespace PierresVendors.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+
+      string name01 = "P-Diddy";
+      string name02 = "Stoner Factory";
+      Vendor newVendor1 = new Vendor(name01);
+      Vendor newVendor2 = new Vendor(name02);
+
+
+      Vendor result = Vendor.Find(2);
+
+
+      Assert.AreEqual(oldVendor2, result);
+    }
   }
 
 }
