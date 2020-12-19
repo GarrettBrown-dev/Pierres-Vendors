@@ -8,3 +8,8 @@ body {
   a {
     color:gold;
   }
+
+  h1 {
+    font-family: sans-serif;
+    font-style: italic;
+  }

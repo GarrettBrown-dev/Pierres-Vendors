@@ -19,6 +19,7 @@ namespace PierresVendors.Tests
             Order newOrder = new Order("test", "test", "test", "test");
             Assert.AreEqual(typeof(Order), newOrder.GetType());
         }
+        
         [TestMethod]
         public void GetName_ReturnsName_String()
         {
@@ -38,6 +39,7 @@ namespace PierresVendors.Tests
         Assert.AreEqual(desc, result3);
         Assert.AreEqual(cost, result4);
         }
+
         [TestMethod]
         public void SetName_SetName_String()
         {
@@ -50,6 +52,7 @@ namespace PierresVendors.Tests
 
         Assert.AreEqual(updatedName, result);
         }
+
         [TestMethod]
         public void GetAll_ReturnsEmptyList_ItemList()
         {
@@ -59,6 +62,7 @@ namespace PierresVendors.Tests
 
         CollectionAssert.AreEqual(newList, result);
         }
+
         [TestMethod]
         public void GetAll_ReturnsOrders_OrderList()
         {
@@ -72,6 +76,7 @@ namespace PierresVendors.Tests
 
         CollectionAssert.AreEqual(newList, result);
         }
+
         [TestMethod]
         public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
         {
@@ -82,6 +87,7 @@ namespace PierresVendors.Tests
 
         Assert.AreEqual(1, result);
         }
+
         [TestMethod]
         public void Find_ReturnsCorrectOrder_Order()
         {

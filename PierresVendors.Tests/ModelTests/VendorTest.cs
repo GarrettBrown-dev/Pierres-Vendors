@@ -12,12 +12,14 @@ namespace PierresVendors.Tests
     {
       Vendor.ClearAll();
     }
+    
     [TestMethod]
     public void VendorConstructor_ReturnsInstance_Vendor()
     {
       Vendor newVendor = new Vendor("test");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
+
     [TestMethod]
     public void GetName_ReturnsName_String()
     {
@@ -28,6 +30,7 @@ namespace PierresVendors.Tests
 
       Assert.AreEqual(name, result);
     }
+
     [TestMethod]
     public void GetId_ReturnsVendorId_Int()
     {
@@ -38,6 +41,7 @@ namespace PierresVendors.Tests
 
       Assert.AreEqual(1, result);
     }
+
     [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
@@ -51,6 +55,7 @@ namespace PierresVendors.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
     [TestMethod]
     public void Find_ReturnsCorrectVendor_Vendor()
     {
@@ -66,6 +71,7 @@ namespace PierresVendors.Tests
 
       Assert.AreEqual(newVendor2, result);
     }
+
     [TestMethod]
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
