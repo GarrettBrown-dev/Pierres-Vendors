@@ -14,10 +14,11 @@ Pierre has asked us to help again! This time he needs help with a Vendor trackin
   * Download files from GitHub repository by click Code and Download Zip
   * Extract files into a single directory 
   * Run GitBASH in directory
+  * Enter "PierresVendors" Directory
   * Type "dotnet run" in GitBash to run the program
   * Enjoy, Pierre!
 
-* If you would like to test anything: Go to the test directory and use dotnet test.
+* If you would like to test anything: Go to the PierresVendors.Tests directory and type "dotnet test" in GitBash. If there are any errors, use the contact info below to get in touch, and I will get right on it!
 
 * Cloning options
   * For cloning please use the following GitHub [tutorial](https://docs.github.com/en/enterprise/2.16/user/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
